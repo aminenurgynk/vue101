@@ -23,8 +23,14 @@ const routes = [
   {
     path: '/students/:id',
     name: 'studentInfo',
-    component: () => import('../views/StudentInfo.vue')
-  }
+    component: () => import('../views/StudentsInfo.vue'),
+    props:true
+  },
+  {
+    path: '/student',
+    redirect:'/students'
+  },
+
 ]
 
 const router = createRouter({
