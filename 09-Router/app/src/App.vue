@@ -1,11 +1,34 @@
 <template>
-  <nav>
-    <router-link :to="{ name: 'home' }">Home</router-link> |
-    <router-link :to="{ name: 'about' }">About</router-link> |
-    <router-link :to="{ name: 'students' }">Students</router-link>
-  </nav>
-  <router-view/>
+  <div>
+    <nav>
+      <router-link :to="{ name: 'home' }">Home</router-link> |
+      <router-link :to="{ name: 'about' }">About</router-link> |
+      <router-link :to="{ name: 'students' }">Students</router-link>
+    </nav>
+    <div>
+      <span @click="homepage">Home Page</span>
+      <span @click="returnThePage">Return</span>
+      <span @click="next">Next</span>
+    </div>
+    <router-view />
+  </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    homepage() {
+      this.$router.push({ name: 'home' })
+    },
+    returnThePage() {
+      this.$router.go(-1)
+    },
+    next() {
+      this.$router.go(1)
+    },
+  }
+}
+</script>
 
 <style>
 #app {
@@ -28,5 +51,9 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 }
+
+span {
+  padding: 20px 10px;
+  cursor: pointer;
+}
 </style>
-S
