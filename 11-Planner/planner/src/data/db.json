@@ -1,28 +1,28 @@
 {
-    "projects": [
-        {
-            "id": 1,
-            "title": "Test01",
-            "details": "Lorem dfnklsh",
-            "complete": true
-        },
-        {
-            "id": 2,
-            "title": "Test02",
-            "details": "Lorem dfnklsh",
-            "complete": true
-        },
-        {
-            "id": 3,
-            "title": "Test03",
-            "details": "Lorem dfnklsh",
-            "complete": true
-        },
-        {
-            "id": 4,
-            "title": "Test04",
-            "details": "Lorem dfnklsh",
-            "complete": false
-        }
-    ]
+  "projects": [
+    {
+      "id": "1",
+      "title": "Test01",
+      "details": "Lorem dfnklsh",
+      "complete": true
+    },
+    {
+      "id": "2",
+      "title": "Test02",
+      "details": "Lorem dfnklsh",
+      "complete": false
+    },
+    {
+      "id": "3",
+      "title": "Test03",
+      "details": "Lorem dfnklsh",
+      "complete": false
+    },
+    {
+      "id": "4",
+      "title": "Test04",
+      "details": "Lorem dfnklsh",
+      "complete": true
+    }
+  ]
 }
